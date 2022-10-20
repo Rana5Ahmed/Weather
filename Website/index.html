@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Weather Journal</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+ <body>
+<div id = "app">
+  <div ><b class ="holder headline" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 85px;text-align: center; text-shadow: 10px;">
+    Weather Journal App</b>
+  </div>
+  
+  <div class ="holder zip">
+    <label for="zip">Enter Zipcode here</label>
+    <input type="text" id="zip" placeholder="enter zip code here">
+  </div>
+
+  
+  <div class ="holder feel">
+    <div style="margin: 5px;padding: 10px;">
+    <label for="feelings">How are you feeling today?</label></div>
+    <textarea class= "myInput" id="feelings" placeholder="Enter your feelings here" rows="9" cols="50" ></textarea>
+    <div><button id="generate" type ="submit" style=" width: 250px;height: 20px;margin:10px;padding: 15px;position:absolute;text-align: center;" ><b>Generate</b>  </button></div>
+   
+  </div>
+    <div class ="holder entry">
+    <div class = "title" style="margin: 45px;padding: 125px;"> Most Recent Entry</div>
+   <div id = "entryHolder">
+    <div style="margin:0px;padding:0px;">
+      <div id = "date"></div> 
+      <div id = "temp"></div>
+      <div id = "content"></div>   
+
+    </div>
+    
+  </div>
+  </div>
+  </div>
+<script src="js/app.js" type="text/javascript"></script>
+
+
+</body>
+</html>
